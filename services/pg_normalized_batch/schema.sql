@@ -5,6 +5,7 @@ CREATE EXTENSION postgis;
 BEGIN;
 
 CREATE TABLE users (
+    id_users BIGINT,
     created_at TIMESTAMPTZ,
     updated_at TIMESTAMPTZ,
     url TEXT,
