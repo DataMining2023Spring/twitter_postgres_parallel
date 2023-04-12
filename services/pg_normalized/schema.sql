@@ -29,7 +29,7 @@ CREATE TABLE users (
     name TEXT,
     location TEXT,
     description TEXT,
-    withheld_in_countries VARCHAR(2)[]
+    withheld_in_countries VARCHAR(2)[],
     FOREIGN KEY (id_urls) REFERENCES urls(id_urls)
 );
 
