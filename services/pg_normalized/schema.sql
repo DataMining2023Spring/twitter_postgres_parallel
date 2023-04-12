@@ -19,7 +19,6 @@ CREATE TABLE users (
     created_at TIMESTAMPTZ,
     updated_at TIMESTAMPTZ,
     id_urls BIGINT REFERENCES urls(id_urls),
-    url TEXT,
     friends_count INTEGER,
     listed_count INTEGER,
     favourites_count INTEGER,
