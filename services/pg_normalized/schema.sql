@@ -19,6 +19,7 @@ CREATE TABLE users (
     created_at TIMESTAMPTZ,
     updated_at TIMESTAMPTZ,
     id_urls BIGINT REFERENCES urls(id_urls),
+    url TEXT,
     friends_count INTEGER,
     listed_count INTEGER,
     favourites_count INTEGER,
@@ -29,7 +30,7 @@ CREATE TABLE users (
     name TEXT,
     location TEXT,
     description TEXT,
-    withheld_in_countries VARCHAR(2)[],
+    withheld_in_countries VARCHAR(2)[]
     FOREIGN KEY (id_urls) REFERENCES urls(id_urls)
 );
 
