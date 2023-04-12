@@ -13,7 +13,7 @@ done
 echo '================================================================================'
 echo 'load pg_normalized'
 echo '================================================================================'
-time python3 -u load_tweets.py --db=postgresql://postgres:pass@localhost:2373/ --inputs $files
+time python3 -u load_tweets.py --db=postgresql://postgres:pass@localhost:2377/ --inputs $files
 
 echo '================================================================================'
 echo 'load pg_normalized_batch'
